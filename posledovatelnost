@@ -1,0 +1,19 @@
+@startuml
+
+actor Student
+participant System
+ 
+Student -> System: Select drink
+Student -> System: Call robot
+System -> System: Find student
+System -> System: Find robot
+System -> Robot: Move to device
+Robot -> Device: Get drink
+Device -> Robot: Drink ready
+System -> System: Calculate path
+System -> Robot: Send move command
+Robot -> System: Move to student
+Robot -> System: Arrived at student
+System -> Student: Drink delivered
+
+@endumlm
