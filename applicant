@@ -1,0 +1,28 @@
+@startuml
+:Student: --> (Call)
+:Student: --> (ChooseDrink)
+
+"Студент" as Student
+"Вызвать робота" as (Call)
+"Выбор напитка" as (ChooseDrink)
+
+(Сервер)-->(ReadImage)
+(Сервер)-->(RecogniseRobot)
+(Сервер)-->(RecogniseStudent)
+
+"Прочитать изображение" as (ReadImage)
+"Распознать робота" as (RecogniseRobot)
+"Распознать студента" as (RecogniseStudent)
+
+Робот-->(MoveToStudent)
+Робот-->(MoveToDevice)
+Робот-->(TakeDrink)
+Робот-->(DeliveryDrink)
+Робот-->(ArrivedAtStudent)
+ 
+"Движение к сутденту" as (MoveToStudent)
+"Двигаться к аппарату" as (MoveToDevice)
+"Взять напиток" as (TakeDrink)
+"Доставить напиток" as (DeliveryDrink)
+"Пибыть к студенту" as (ArrivedAtStudent)
+@enduml
