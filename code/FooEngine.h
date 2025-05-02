@@ -1,3 +1,5 @@
+#todo разобраться с mosquito и многопоток + безопасность
+
 #pragma once
 #include "AEngine.h"
 #include <iostream>
